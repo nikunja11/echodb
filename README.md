@@ -24,6 +24,7 @@ aws --endpoint-url=http://localhost:4566 s3 mb s3://echodb-test 2>/dev/null
 Terminal 2
 # ✅ Set S3 endpoint for LocalStack
 export S3_ENDPOINT=http://localhost:4566
+export S3_BUCKET=echodb-test 
 
 Start The leader on terminal 1
 mvn exec:java \
@@ -34,6 +35,7 @@ Terminal 3
 Start The Follower 
 # ✅ Set S3 endpoint for LocalStack
 export S3_ENDPOINT=http://localhost:4566
+export S3_BUCKET=echodb-test
 mvn exec:java \
     -Dexec.mainClass="com.echodb.Main" \
     -Dexec.args="node-2 follower --leader=node-1 --port=8082"
