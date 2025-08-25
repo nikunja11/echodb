@@ -1,0 +1,71 @@
+# -----------------------------
+# OS-specific files
+# -----------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# -----------------------------
+# Java / JVM build artifacts
+# -----------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven / Gradle
+target/
+build/
+out/
+.gradle/
+!gradle-wrapper.jar
+
+# -----------------------------
+# Logs and runtime files
+# -----------------------------
+nohup.out
+*.log
+*.pid
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+*.tmp
+*.bak
+*.old
+
+# -----------------------------
+# IntelliJ IDEA / JetBrains IDEs
+# -----------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# -----------------------------
+# Eclipse (if ever used)
+# -----------------------------
+.project
+.classpath
+.settings/
+bin/
+
+# -----------------------------
+# VS Code (if ever used)
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# Other development stuff
+# -----------------------------
+.env
+*.local
